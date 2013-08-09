@@ -1,0 +1,46 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.5.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "18.0.1"
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 18
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("gotcha.keystore")
+            storePassword "G0tch4"
+            keyAlias "gotcha"
+            keyPassword "G0tch4"
+        }
+    }
+
+    buildTypes {
+        release {
+            jniDebugBuild true
+            signingConfig signingConfigs.release
+            runProguard true
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:13.0.+'
+    compile 'com.google.android.gms:play-services:3.2.25'
+}

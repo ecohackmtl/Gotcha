@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Gotcha.iml" filepath="$PROJECT_DIR$/Gotcha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gotcha/Gotcha-Gotcha.iml" filepath="$PROJECT_DIR$/Gotcha/Gotcha-Gotcha.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gotcha</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="suggest">Send</string>
+    <string name="courts_name">Court\'s name</string>
+    <string name="fetching_current_address">fetching current address&#8230;</string>
+</resources>
